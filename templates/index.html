@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Agenda de Contatos - SLQA{% endblock %}
+
+{% block content %}
+    <h2>Agenda</h2>
+    {% if contatos %}
+        <ul>
+        {% for contato in contatos %}
+            <li><a href="{{ contato.get_absolute_url }}">{{ contato.nome }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Não existem contatos.</p>
+    {% endif %}
+
+{% endblock %}
