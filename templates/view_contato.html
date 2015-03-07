@@ -1,14 +1,25 @@
-{% extends 'base.html' %} 
-{% block head_title %}{{ post.title }}{% endblock %}
-{% block title %}{{ post.title }}{% endblock %}
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 
-{% block content %}
-    <img src="{{ contato.foto.url }}" width="200px"/><br>
-    Nome: {{ contato.nome }} <br>
-    CPF: {{ contato.cpf }} <br>
-    Idade: {{ contato.idade }} <br>
-    E-mail: {{ contato.email }} <br>
-    Telefone: {{ contato.telefone }} <br>
-    Criado em: {{ contato.criado_em }} <br>
+    {% block content %}
+      <img src="{{ contato.foto.url }}" width="200px"/><br>
+      Nome: {{ contato.nome }} <br>
+      CPF: {{ contato.cpf }} <br>
+      Idade: {{ contato.idade }} <br>
+      E-mail: {{ contato.email }} <br>
+      Telefone: {{ contato.telefone }} <br>
+      Criado em: {{ contato.criado_em }} <br>
 
 {% endblock %}
+</body>
+</html>
+
+
+
+
+

@@ -1,17 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
 <html>
-
-    {% load staticfiles %}
-
+<head>
     <link rel="stylesheet" type="text/css" href="{% static 'agenda/css/bootstrap.css' %}" />
     <script src="{% static 'agenda/js/bootstrap.js' %}"></script>
+	<title>{% block head_title %}Agenda de Contatos | SLQA{% endblock %}</title>
+</head>
+<body>
 
-    <head>
-        <title class="alert alert-info">{% block head_title %}Agenda de Contatos | SLQA{% endblock %}</title>
-    </head>
-    <body>
-        <h1>{% block title %}Agenda de Contatos | Equipe SLQA{% endblock %}</h1>
         {% block content %}
 
         {% endblock %}
-    </body>
+</body>
 </html>

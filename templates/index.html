@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
-{% block title %}Agenda de Contatos - SLQA{% endblock %}
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Agenda de Contatos - SLQA{% endblock %}</title>
+</head>
+<body>
 {% block content %}
+    <h1>Agenda de Contatos | Equipe SLQA</h1>
+
     <h2>Agenda</h2>
     {% if contatos %}
         <ul>
@@ -12,5 +18,14 @@
     {% else %}
         <p>Não existem contatos.</p>
     {% endif %}
+    {% endblock %}
+</body>
+</html>
 
-{% endblock %}
+
+
+
+
+
+
+

@@ -7,8 +7,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'agendaContatos.views.home', name='home'),
-    # url(r'^agendaContatos/', include('agendaContatos.foo.urls')),
+    # url(r'^$', 'siliqua.views.home', name='home'),
+    # url(r'^siliqua/', include('siliqua.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
